@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
             DIFICULT++;
             NIVEL++;
             nivel.setText("Nivel: "+NIVEL);
-            Intent intent=new Intent(this,Main2Activity.class);
+            Intent intent=new Intent(this,segun.class);
             startActivity(intent);
         } else{
             Toast.makeText(this, "Lose", Toast.LENGTH_SHORT).show();
