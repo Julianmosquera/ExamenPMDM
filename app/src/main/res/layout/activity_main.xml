@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+    >
+
+
+    <Button
+        android:text="Start"
+        android:background="#ffc266"
+        android:onClick="Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/Start"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/rojo"
+        android:background="#ff4d4d"
+        android:onClick="eventoRojo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/Start"
+        android:layout_alignRight="@+id/Start"
+        android:layout_alignEnd="@+id/Start"
+        android:layout_marginRight="62dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginTop="45dp" />
+
+    <Button
+        android:id="@+id/Azul"
+        android:background="#33ccff"
+        android:onClick="eventoAzul"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/rojo"
+        android:layout_alignLeft="@+id/Start"
+        android:layout_alignStart="@+id/Start"
+        android:layout_marginLeft="62dp"
+        android:layout_marginStart="62dp" />
+
+    <Button
+        android:id="@+id/marron"
+        android:background="#795548"
+        android:onClick="eventomarron"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/verde"
+        android:layout_alignLeft="@+id/Azul"
+        android:layout_alignStart="@+id/Azul" />
+
+    <Button
+        android:id="@+id/verde"
+        android:background="#b3ff1a"
+        android:onClick="eventoVerde"
+        android:layout_below="@+id/rojo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/rojo"
+        android:layout_alignStart="@+id/rojo"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nivel"
+        android:layout_below="@+id/verde"
+        android:layout_alignLeft="@+id/verde"
+        android:layout_alignStart="@+id/verde"
+        android:layout_marginTop="52dp"
+        android:layout_toLeftOf="@+id/Azul"
+        android:layout_toStartOf="@+id/Azul" />
+
+
+</RelativeLayout>
