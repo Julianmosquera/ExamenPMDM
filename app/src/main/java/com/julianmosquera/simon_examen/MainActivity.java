@@ -42,10 +42,10 @@ public class MainActivity extends AppCompatActivity {
         botonverde=(Button)findViewById(R.id.verde);
 
 
-        alerta1= MediaPlayer.create(this, R.raw.alerta1);
-        alerta2=MediaPlayer.create(this, R.raw.alerta2);
-        alarma3=MediaPlayer.create(this, R.raw.alarma3cortamp3);
-        alarma4=MediaPlayer.create(this, R.raw.gongcorto);
+       // alerta1= MediaPlayer.create(this, R.raw.alerta1);
+       // alerta2=MediaPlayer.create(this, R.raw.alerta2);
+        //alarma3=MediaPlayer.create(this, R.raw.alarma3cortamp3);
+      //  alarma4=MediaPlayer.create(this, R.raw.gongcorto);
 
 
     }
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     int [] colorClaro={Color.BLUE,Color.RED,Color.parseColor("#FFFF00"),Color.GREEN};
-    int [] arrayAudio ={R.raw.alerta1,R.raw.alerta2,R.raw.alarma3cortamp3,R.raw.gongcorto};
+   // int [] arrayAudio ={R.raw.alerta1,R.raw.alerta2,R.raw.alarma3cortamp3,R.raw.gongcorto};
 
     TimerTask tiempoTarea;
     Timer tiempo;
@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
             DIFICULT++;
             NIVEL++;
             nivel.setText("Nivel: "+NIVEL);
-            Intent intent=new Intent(this,segun.class);
+            Intent intent=new Intent(this,segunda.class);
             startActivity(intent);
         } else{
             Toast.makeText(this, "Lose", Toast.LENGTH_SHORT).show();
